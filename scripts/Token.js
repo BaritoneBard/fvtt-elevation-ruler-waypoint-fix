@@ -130,6 +130,7 @@ function _onDragLeftStart(wrapped, event) {
 function _onDragLeftCancel(wrapped, event) {
   log("Token#_onDragLeftCancel");
 
+  /*
   // Add waypoint on right click
   const ruler = canvas.controls.ruler;
   if ( event.button === 2 && ruler._isTokenRuler && ruler.active && ruler.state === Ruler.STATES.MEASURING ) {
@@ -139,6 +140,7 @@ function _onDragLeftCancel(wrapped, event) {
     else ruler._addWaypoint(event.interactionData.destination, {snap: !event.shiftKey});
     return false;
   }
+  */
 
   wrapped(event);
 
